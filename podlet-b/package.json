@@ -1,15 +1,26 @@
 {
-  "name": "podlet",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "author": "sasoria",
-  "license": "MIT",
   "scripts": {
-    "start": "node podlet.js"
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "podlet": "node podlet.js",
+    "test": "web-test-runner \"src/**/*.test.jsx\"",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "prettier --check \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
-    "@podium/podlet": "^4.4.14",
-    "express": "^4.17.1"
+    "@podium/podlet": "4.4.19",
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-dotenv": "^2.0.5",
+    "@snowpack/plugin-react-refresh": "^2.4.0",
+    "@snowpack/web-test-runner-plugin": "^0.2.0",
+    "@testing-library/react": "^11.0.0",
+    "@web/test-runner": "^0.12.0",
+    "chai": "^4.2.0",
+    "prettier": "^2.0.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "snowpack": "^3.0.1"
   }
 }
