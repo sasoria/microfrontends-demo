@@ -1,0 +1,15 @@
+{
+  "name": "layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "sasoria",
+  "license": "MIT",
+  "scripts": {
+    "start": "node layout.js"
+  },
+  "dependencies": {
+    "@podium/layout": "^4.6.24",
+    "express": "^4.17.1"
+  }
+}
