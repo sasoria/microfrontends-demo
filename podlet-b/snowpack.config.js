@@ -15,6 +15,7 @@ module.exports = {
         entrypoints: 'build/dist/index.js',
 
         extendConfig: (config) => {
+          config.outputOptions.sourcemap = false;
           config.outputOptions.dir = 'build/dist';
           config.outputOptions.format = 'esm';
 
