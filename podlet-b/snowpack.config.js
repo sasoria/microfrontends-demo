@@ -12,12 +12,12 @@ module.exports = {
     [
       'snowpack-plugin-rollup-bundle',
       {
-        entrypoints: 'build/dist/index.js',
-        entrypoints: 'build/dist/index.css',
+        entrypoints: ['build/dist/index.js', 'build/dist/index.css'],
 
         extendConfig: (config) => {
           config.outputOptions.sourcemap = false;
           config.outputOptions.format = 'esm';
+          config.outputOptions.dir = 'build/dist';
 
           return config;
         },
