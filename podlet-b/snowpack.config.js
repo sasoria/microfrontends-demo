@@ -12,6 +12,9 @@ module.exports = {
     [
       'snowpack-plugin-rollup-bundle',
       {
+        emitHtmlFiles: false,
+        preserveSourceFiles: false,
+
         entrypoints: ['build/dist/index.js', 'build/dist/index.css'],
 
         extendConfig: (config) => {
