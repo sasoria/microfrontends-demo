@@ -24,6 +24,13 @@ const podletB = layout.client.register({
   resolveCss: true,
 });
 
+const podletC = layout.client.register({
+  name: "podlet-c",
+  uri: "http://localhost:7300/manifest.json",
+  resolveJs: true,
+  resolveCss: true,
+});
+
 app.use(layout.middleware());
 
 app.get(layout.pathname(), async (req, res, next) => {
@@ -32,6 +39,7 @@ app.get(layout.pathname(), async (req, res, next) => {
   const podlets = await Promise.all([
     podletA.fetch(incoming),
     podletB.fetch(incoming),
+    podletC.fetch(incoming),
   ]);
 
   incoming.view.title = "Podium Layout";
@@ -41,6 +49,7 @@ app.get(layout.pathname(), async (req, res, next) => {
     `<section>
        ${podlets[0].content}
        ${podlets[1].content}
+       ${podlets[2].content}
     </section>`
   );
 });
