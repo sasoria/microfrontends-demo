@@ -28,7 +28,7 @@ app.get(podlet.manifest(), (req, res) => {
   res.status(200).send(podlet);
 });
 
-podlet.css({ value: '/build/dist/css/index-0ca7e266.css' });
-podlet.js({ value: '/build/dist/index-1860e6da.js', type: 'module' });
+podlet.css({ value: '/build/dist/index.css' });
+podlet.js({ value: '/build/dist/index.js', type: 'module' });
 
 app.listen(7300, () => console.log('Podlet listening on port 7300'));
