@@ -12,5 +12,5 @@ Builds a static copy of your site to the `build/` folder with ESbuild.
 
 ### npm run podlet
 
-Starts the podlet server at http://localhost:7003.
+Starts the Podlet server at http://localhost:7003.
 
