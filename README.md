@@ -14,5 +14,5 @@ Podlet is Podium's term for microfrontends and each one in this demo is written 
 $ npm run podlet
 ```
 
-## Shared dependencies.
+## Shared dependencies
 Each podlet shares react dependencies through caching in the browser and fetches both react and react-dom from [Skypack](https://www.skypack.dev/), thus reducing the bundle size considerably.
