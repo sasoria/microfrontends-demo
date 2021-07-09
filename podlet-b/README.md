@@ -1,7 +1,7 @@
-# Podlet-b
+# Podlet
+> Podlets (page fragments) are standalone HTTP services developed and run in isolation. Podlets can be written in any language, but Podium comes with a @podium/podlet module for easy development of Podlets in node.js ([podium-lib.io](https://podium-lib.io/)).
 
 ## Available Scripts
-
 ```
 $ npm start
 ```
