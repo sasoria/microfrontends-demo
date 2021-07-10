@@ -19,7 +19,6 @@ module.exports = {
   },
   devOptions: {
     open: 'none',
-    bundle: true,
   },
   buildOptions: {
     clean: true,
