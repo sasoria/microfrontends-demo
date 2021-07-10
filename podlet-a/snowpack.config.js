@@ -1,3 +1,6 @@
+const postcss = require('rollup-plugin-postcss');
+const lessLoader = require('rollup-plugin-postcss-webpack-alias-less-loader');
+
 module.exports = {
   mount: {
     public: { url: '/', static: true },
@@ -17,10 +20,10 @@ module.exports = {
   packageOptions: {
     NODE_ENV: true,
     rollup: {
-      plugins: [require('rollup-plugin-postcss')({
+      plugins: [postcss({
         extract: false,
         minimize: true,
-        loaders: [require('rollup-plugin-postcss-webpack-alias-less-loader')({
+        loaders: [lessLoader({
           nodeModulePath: "./node_modules",
           aliases: {}
       })],
