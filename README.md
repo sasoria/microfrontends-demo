@@ -15,4 +15,4 @@ $ npm run podlet
 ```
 
 ## Shared dependencies
-Each podlet shares react dependencies through caching in the browser and fetches both react and react-dom from [Skypack](https://www.skypack.dev/), thus reducing the bundle size considerably.
+Each podlet shares react dependencies through absolute ESM imports that are cached in the browser. They fetch both react and react-dom from [Skypack](https://www.skypack.dev/), thus reducing the bundle size considerably.
