@@ -1,6 +1,6 @@
 # Microfrontends-demo
 
-A demo of a microfrontends. This demo uses [Podium](https://podium-lib.io/), a microfrontend framework that's made and maintained by [FINN.no](https://github.com/finn-no).
+A demo of microfrontends. This demo uses [Podium](https://podium-lib.io/), a microfrontend framework that's made and maintained by [FINN.no](https://github.com/finn-no).
 
 ## Layout
 
