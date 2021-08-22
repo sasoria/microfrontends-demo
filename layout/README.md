@@ -3,7 +3,7 @@
 
 ## Available Scripts
 ```
-$ npm start
+$ npm run layout
 ```
 Starts the Layout server at http://localhost:7000.
 
